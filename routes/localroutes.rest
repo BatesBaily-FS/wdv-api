@@ -1,0 +1,38 @@
+# GET ALL REQUEST
+GET http://localhost:8000/students
+
+###
+
+# GET ONE 
+GET http://localhost:8000/students/670acbb11219e7aa87766839
+
+###
+
+# POST REQUEST
+POST http://localhost:8000/students
+Content-Type: application/json
+
+{
+  "name": "Baily Bates",
+  "class": "DWA"
+}
+
+
+###
+# DELETE REQUEST
+
+DELETE http://localhost:8000/students/670acbb11219e7aa87766839
+
+
+###
+
+# PATCH UPDATE REQUEST
+
+
+PATCH http://localhost:8000/students/670acbc21219e7aa8776683b
+Content-Type: application/json
+
+{
+  "name": "Baily Nicole Bates",
+  "class": "New Class"
+}
